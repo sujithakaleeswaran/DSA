@@ -1,0 +1,18 @@
+
+class Solution
+{
+    public int countdigits(int n)
+    {
+      if(n==0)
+      {
+          return 0;
+      }
+      return 1+countdigits(n/10);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+    Solution scan=new Solution();
+    System.out.print(scan.countdigits(345));
+}
+}
