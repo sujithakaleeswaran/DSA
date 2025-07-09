@@ -1,0 +1,26 @@
+
+class Solution
+{
+    public int printnos(int[] a,int n,int i,int target)
+    {
+    if(i>=n)
+    {
+        return -1;
+    }
+    if(target==a[i])
+    {
+        return i;
+    }
+    else{
+       return printnos(a,n,i+1,target); 
+    }
+    
+}
+}
+class Main {
+    public static void main(String[] args) {
+    Solution scan=new Solution();
+    int[] a={67,58,5,74,76};
+    scan.printnos(a,5,0,5);
+    }
+}
