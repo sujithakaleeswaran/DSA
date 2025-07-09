@@ -1,0 +1,20 @@
+
+class Solution
+{
+    public int sumarr(int[] a,int n,int i)
+    {
+    if(i>=n)
+    {
+        return 0;
+    }
+    return a[i]+sumarr(a,n,i+1);
+    
+}
+}
+class Main {
+    public static void main(String[] args) {
+    Solution scan=new Solution();
+    int[] a={67,58,5,74,76};
+    System.out.print(scan.sumarr(a,5,0));
+    }
+}
